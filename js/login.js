@@ -5,14 +5,14 @@ function loginAuthenticate() {
     let lcashiername = localStorage.getItem('cashierName')
     let lcashierpin = localStorage.getItem('cashierPin')
 
-    if(fcashiername === "Cyril John" && fcashierpin === "123456") {
+    if(fcashiername === "Zila" && fcashierpin === "123456") {
         localStorage.setItem('currentCashier', fcashiername);
         window.location.replace("pos.html");
-        alert("Hi Cyril John. You are now logged in.")
-    } else if (fcashiername === "Hazel Fel" && fcashierpin === "000000") {
+        alert("Hi Zila. You are now logged in.")
+    } else if (fcashiername === "Hanapet" && fcashierpin === "000000") {
         localStorage.setItem('currentCashier', fcashiername);
         window.location.replace("pos.html");
-        alert("Hi Hazel Fel .You are now logged in.");
+        alert("Hi Hanapet .You are now logged in.");
     } else if (fcashiername === lcashiername && fcashierpin === lcashierpin) {
         localStorage.setItem('currentCashier', fcashiername);
         window.location.replace("pos.html");
