@@ -1,3 +1,14 @@
+const audio = new Audio();
+audio.src = "./assets/beep1.mp3";
+audio.volume = .1;
+
+const selectaudio = new Audio();
+selectaudio.src = "./assets/beep1.mp3"
+selectaudio.volume = 1;
+
+
+
+
 const orderitemidarray = [];
 const orderidarray = [];
 const orderitemsarray = [];
@@ -39,8 +50,8 @@ function ordercart(itemid, itemname, itemprice){
     qtyspan.className = 'px-3 fw-bold item'+ i;
     const qtytxt = document.createTextNode('1');
 
-    deductqtybtn.className = 'btn btn-danger btn-sm rounded-circle';
-    addqtybtn.className = 'btn btn-success btn-sm rounded-circle';
+    deductqtybtn.className = 'btn btn-dark btn-sm circle';
+    addqtybtn.className = 'btn btn-dark btn-sm circle';
 
     deductqtybtn.appendChild(deductqtybtntxt);
     addqtybtn.appendChild(addqtybtntxt);
@@ -57,13 +68,13 @@ function ordercart(itemid, itemname, itemprice){
     const orderitemname = document.createTextNode(itemname);
     const orderitemprice = document.createTextNode(' P ' + itemprice);
     // Price color red
-    orderitempricespan.className = 'text-danger';
+    orderitempricespan.className = 'text-dark';
     orderitempricespan.appendChild(orderitemprice);
     const deletebutton = document.createElement('button');
     const deletebuttontext = document.createTextNode('X');
     deletebutton.setAttribute('onclick', 'deleteItem('+i+', this)');
     deletebutton.appendChild(deletebuttontext);
-    deletebutton.className = 'btn btn-danger btn-sm rounded-circle';
+    deletebutton.className = 'btn btn-danger btn-sm circle';
     //Append item to LI
     orderitem.appendChild(orderitemname);
     orderitem.appendChild(orderitempricespan);

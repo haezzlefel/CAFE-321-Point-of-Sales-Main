@@ -18,3 +18,11 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
 }
+.nav-link.active {
+    background-color: black;
+    color: aliceblue;
+  }
+
+  .nav-link {
+    color: black;
+  }
