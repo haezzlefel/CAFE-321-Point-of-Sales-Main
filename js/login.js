@@ -5,7 +5,7 @@ function loginAuthenticate() {
     let lcashiername = localStorage.getItem('cashierName')
     let lcashierpin = localStorage.getItem('cashierPin')
 
-    if(fcashiername === "Zila" && fcashierpin === "123456") {
+    if(fcashiername === "Zila" && fcashierpin === "000000") {
         localStorage.setItem('currentCashier', fcashiername);
         window.location.replace("pos.html");
         alert("Hi Zila. You are now logged in.")
