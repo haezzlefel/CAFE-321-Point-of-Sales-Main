@@ -13,6 +13,14 @@ function loginAuthenticate() {
         localStorage.setItem('currentCashier', fcashiername);
         window.location.replace("pos.html");
         alert("Hi Hanapet .You are now logged in.");
+    } else if (fcashiername === "Zia" && fcashierpin === "000000") {
+        localStorage.setItem('currentCashier', fcashiername);
+        window.location.replace("pos.html");
+        alert("Hi Zia .You are now logged in.");
+    } else if (fcashiername === "Nigu" && fcashierpin === "000000") {
+        localStorage.setItem('currentCashier', fcashiername);
+        window.location.replace("pos.html");
+        alert("Hi Nigu .You are now logged in.");
     } else if (fcashiername === lcashiername && fcashierpin === lcashierpin) {
         localStorage.setItem('currentCashier', fcashiername);
         window.location.replace("pos.html");
@@ -68,6 +76,16 @@ function staticCashier1() {
 function staticCashier2() {
     cashiername.value = staticcashier2.value;
     let currentuser = document.getElementById('staticcashier2').value;
+    localStorage.setItem('currentCashier', currentuser);
+}
+function staticCashier3() {
+    cashiername.value = staticcashier3.value;
+    let currentuser = document.getElementById('staticcashier3').value;
+    localStorage.setItem('currentCashier', currentuser);
+}
+function staticCashier4() {
+    cashiername.value = staticcashier4.value;
+    let currentuser = document.getElementById('staticcashier4').value;
     localStorage.setItem('currentCashier', currentuser);
 }
 
